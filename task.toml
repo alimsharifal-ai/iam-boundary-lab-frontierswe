@@ -1,0 +1,24 @@
+version = "1.0"
+
+[task]
+name = "samples/iam-boundary-lab"
+description = "Implement a fail-closed IAM policy decision point with independent guardrails and role trust."
+
+[metadata]
+category = "security"
+difficulty = "hard"
+tags = ["iam", "cloud-security", "privilege-escalation", "policy-evaluation", "red-team"]
+expert_time_estimate_hours = 14
+
+[agent]
+timeout_sec = 72000
+
+[verifier]
+timeout_sec = 600
+
+[environment]
+build_timeout_sec = 600
+cpus = 2
+memory_mb = 2048
+storage = "4G"
+allow_internet = false
